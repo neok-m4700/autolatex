@@ -289,7 +289,7 @@ sub new(\%) : method {
 
 	if ($_[0]->{'generation.latex_flags'}) {
 		my @params = split(/\s+/, ($_[0]->{'generation.latex_flags'}));
-		push @{$self->{'latex_flags'}}, @params;
+		push @{$self->{'latex_cmd'}}, @params;
 	}
 
 	# Change the warning level
